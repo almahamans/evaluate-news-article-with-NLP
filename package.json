@@ -1,0 +1,53 @@
+{
+  "name": "evaluate-news-article-with-nlp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "start": "node src/server/index.js",
+    "build-dev": "webpack-dev-server --config webpack.dev.js --open",
+    "build-prod": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almahamans/evaluate-news-article-with-NLP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/almahamans/evaluate-news-article-with-NLP/issues"
+  },
+  "homepage": "https://github.com/almahamans/evaluate-news-article-with-NLP#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jest-fetch-mock": "^3.0.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "body-parser": "^1.20.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "cors": "^2.8.5",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.3.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "node-fetch": "^3.3.0",
+    "node-sass": "^8.0.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack-dev-server": "^4.11.1",
+    "workbox-webpack-plugin": "^6.5.4"
+  }
+}

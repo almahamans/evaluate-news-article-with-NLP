@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta charset="utf-8">
+        <title>News Article with NLP</title>
+    </head>
+
+    <body>
+        <header>
+            <h2>
+            Evaluate News Article with NLP, API
+            </h2>
+        </header>
+        <main>
+            <h3>Please enter an url for article or news to evaluate it's sentiment by meaningcloud API:</h3>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="url" type="text" name="input"  placeholder="Enter the url of a news article here">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input type="submit" id="submit" value="Analyse Sentiments" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                </form>
+            </section>
+
+            <section id="results-sec">
+                <strong>Results:</strong>
+                <div id="error"></div>
+                <div id="results"></div>
+                <div id = "subjective"></div>
+                <div id = "confidence"></div>
+                <div id = "polarity"></div>
+                <div id = "agreement"></div>
+                <div id = "ironic"></div>
+            </section>
+        </main>
+        
+        <script>
+            if('serviceWorker' in navigator){
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js')
+                    // './sw.js'
+              })
+            }
+        </script>
+    </body>
+</html>
